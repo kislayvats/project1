@@ -1,0 +1,109 @@
+<%- include("partials/header.ejs") %>
+<div class="page-wrapper">
+    <!-- 1st div for wholesale egg -->
+    <div id="wholesale" class="container-fluid px-0">
+        <div class="row align-items-center">
+            <div id="ektry2" class="col-md-6 order-md-1  order-2 wholesaleimg animated slideInLeft">
+                <img class="img-fluid" src="/photos/egg-tray-png-6.png" style="width: 900px;">
+  </div>
+  <div class="col-md-6 text-center text-white   order-md-2 order-1">
+      <div class="row justify-content-center">
+          <div class="col-10 col-lg-8 wholesaletext animated slideInRight">
+      <h1 id="naya" style="text-align: center; color: red;">Andaa Factory</h1>
+     
+      <h3 style="color: salmon; font-weight: 100; font-size: 1.25rem; line-height: 2.0;">Get Eggs at the best Price.</h3>
+  <a href="##" class="btn btn-success">Buy Now</a>
+    </div>
+      </div>
+  </div>
+        </div>
+        </div>
+        <!-- 2nd DIV FOR RETAIL EGG -->
+        
+      <div id="retail" class="container-fluid px-0">
+        <div class="row align-items-center mt-md-0">
+            <div class="col-lg-6 order-2 order-md-1">
+                <div class="text-white text-center">
+                    <div class="row justify-content-center">
+            <div class="col-md-10 col-8 retailtext">
+                <h1 style="color:red; text-align: center;">Andaa Factory</h1>
+                <h3 id="bc" style="color: black;">Retail Eggs at the best price</h3>
+                <a href="##" class="btn btn-success">Buy Now</a>
+            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 order-1 order-md-2 retailimg"> 
+                <img class="img-fluid retailegg" src="/photos/eggbetterpng.png">
+
+            </div>
+        </div>
+      </div>
+      <!-- 3rd DIV FOR POULTRY FEED -->
+      <div id="poultryfeed" class="container-fluid px-0">
+        <div class="row align-items-center">
+            <div id="ektry2" class="col-md-6 order-md-1  order-2 feedimg">
+                <img class="img-fluid feedimage" src="/photos/chickenfeed.png">
+  </div>
+  <div class="col-md-6 text-center text-white order-md-2 order-1">
+      <div class="row justify-content-center">
+          <div class="col-10 col-lg-8 feedtext">
+      <h1 id="naya" style="text-align: center; color: red;">Andaa Factory</h1>
+
+      <h3 style="color: black; font-weight: 700; font-size: 1.25rem; line-height: 2.0;">Get The Best Poultry Food For Your Chicken.</h3>
+      <a href="##" class="btn btn-danger">Coming Soon</a>
+    </div>
+      </div>
+  </div>
+        </div>
+        </div>
+
+        <!-- 4th DIV FOR PAPER TRAY -->
+        <div id="papertray" class="container-fluid px-0">
+            <div class="row align-items-center mt-md-0">
+                <div class="col-lg-6 order-2 order-md-1">
+                    <div class="text-white text-center">
+                        <div class="row justify-content-center">
+                <div class="col-md-10 col-8 traytext">
+                    <h1 style="color:white; text-align: center;">Andaa Factory</h1>
+                    <h3 id="bc" style="color: black;">Get Paper Tray At The Best Price</h3>
+                    <a href="##" class="btn btn-danger">Coming Soon</a>
+                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-1 order-md-2 trayimg"> 
+                    <img class="img-fluid papertrayimg" src="/photos/egg-tray-png-6.png">
+    
+                </div>
+            </div>
+          </div>
+    
+</div>
+
+<script>
+    $(document).ready(function(){
+        $(window).scroll(function(){
+            var currentscroll=$(this).scrollTop();
+            console.log(currentscroll);
+//             if((currentscroll>0)&&(currentscroll<100)){
+// $(".wholesaletext").addClass("animated slideInLeft");
+// $(".wholesaleimg").addClass("animated slideInRight");
+//             }
+            if((currentscroll>424)&&(currentscroll<900)){
+$(".retailtext").addClass("animated slideInRight");
+$(".retailimg").addClass("animated slideInLeft");
+            }
+            if((currentscroll>1000)&&(currentscroll<1300)){
+$(".feedtext").addClass("animated slideInLeft");
+$(".feedimg").addClass("animated slideInRight");
+            }
+            if((currentscroll>1500)&&(currentscroll<1800)){
+$(".traytext").addClass("animated slideInRight");
+$(".trayimg").addClass("animated slideInLeft");
+            }
+        })
+    })
+</script>
+
+<%- include("partials/footer.ejs") %>

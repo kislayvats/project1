@@ -1,0 +1,21 @@
+<%- include("partials/header.ejs") %>
+<div class="page-wrapper">
+    <form action="/register" method="POST">
+        <input type="text" placeholder="Username" name="username">
+        <input type="password" placeholder="Password" name="password">
+        <input type="text" placeholder="First Name" name="firstname">
+        <input type="text" placeholder="Last Name" name="lastname">
+        <input type="email" placeholder="abc@gmail.com" name="email">
+        <!-- <input type="dropzone" placeholder="Avatar URL" name="image"> -->
+        <input type="text" placeholder="Admin Code" name="admincode">
+    <button type="submit">Signup</button>
+    </form>
+    <form action="/register" method="POST"  class="dropzone" placeholder="Avatar URL" name="image"></form>
+</div>
+
+
+
+
+
+
+<%- include("partials/footer.ejs") %>

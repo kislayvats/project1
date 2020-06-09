@@ -1,0 +1,14 @@
+<% if(currentuser &&((currentuser.username=="AshutoshPathak")||(currentuser.username=="MahashankarPathak"))){ %>
+<%- include("partials/header.ejs") %>
+<div class="page-wrapper">
+<h1>Add New Photo</h1>
+<form action="/photos" method="POST">
+<input type="file" placeholder="image" name="image">
+<button type="submit">Submit</button>
+</form>
+
+</div>
+
+
+<%- include("partials/footer.ejs") %>
+<%}%>
